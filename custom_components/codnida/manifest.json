@@ -1,0 +1,11 @@
+{
+    "domain": "codnida",
+    "name": "Codnida Camera",
+    "version": "1.0.0",
+    "config_flow": true,
+    "documentation": "https://github.com/riccardodori-hub/ha-codnida",
+    "dependencies": [],
+    "codeowners": ["@riccardodori-hub"],
+    "requirements": ["aiohttp"],
+    "iot_class": "local_polling"
+}

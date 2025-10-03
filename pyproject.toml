@@ -1,0 +1,27 @@
+[tool.pytest.ini_options]
+testpaths = "tests"
+norecursedirs = ".git"
+addopts = "--cov=custom_components.codnida --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["custom_components"]
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "raise NotImplementedError", "if __name__ == .__main__.:"]
+
+[tool.black]
+target-version = ["py39", "py310", "py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
