@@ -9,7 +9,7 @@ CONF_PASSWORD = "password"
 CONF_PORT = "port"
 
 # Defaults
-DEFAULT_PORT = 80
+DEFAULT_PORT = 8080
 DEFAULT_NAME = "Codnida Camera"
 
 # Platform
@@ -21,4 +21,4 @@ SERVICE_PRESET = "preset"
 
 # Attributes
 ATTR_PRESET = "preset"
-ATTR_MOVEMENT = "movement"  # up, down, left, right
+ATTR_MOVEMENT = "movement"
